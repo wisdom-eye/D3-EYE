@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>WALL-E</title>
+		<link rel="shortcut icon" href="ico/favicon.png">
+		<link rel="stylesheet" href="css/index.css" />
+		<style>
+			html {
+				min-width: 1040px;
+				margin: 0;
+			}
+			
+			body {
+				font: 16px/1.5em "Helvetica Neue", Helvetica, sans-serif;
+				margin: 1em 0 4em 0;
+				width: 85%;
+				margin-left: 10%;
+				background: #EFEDF5;
+			}
+			
+			h1 {
+				color: #555;
+				font-size: 64px;
+				font-weight: 200;
+				letter-spacing: -2px;
+				white-space: nowrap;
+				margin-top: 20px;
+			}
+			
+			code {
+				line-height: 1em;
+			}
+			
+			pre {
+				border-left: solid 2px #ccc;
+				padding-left: 18px;
+				margin: 2em 0 2em -20px;
+			}
+			a {
+				color: steelblue;
+			}
+			
+			a:not(:hover) {
+				text-decoration: none;
+			}
+			
+			fieldset .content {
+				display: none;
+			}
+			
+			fieldset legend {
+				color: rgb(237, 118, 0);
+			}
+			
+			fieldset .title {}
+			
+			#footer {
+				border-top: solid 1px #ccc;
+				text-align: center;
+				background: #f3f3f3;
+				color: #666;
+				clear: both;
+				padding: 10px;
+				font-size: 85%;
+			}
+		</style>
+		<script type="text/javascript" src="d3/d3.min.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("legend").click(function() {
+					$(this).parents("fieldset").children(".content").toggle();
+					$(this).parents("fieldset").children(".title").toggle();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Hello World D3</h1>
+		<a target="_blank" href="https://github.com/wisdom-eye"><img style="position:fixed;top:0;right:0;border:0;" width="149" height="149" src="img/forkme.png" alt="Fork me on GitHub"></a>
+		<fieldset>
+			<legend>7大元老(膜拜)</legend>
+			<div class="title">
+				mbostock:<a target="_blank" href="https://bost.ocks.org/mike/">https://bost.ocks.org/mike/</a><br />
+				<p>
+					最后才发现mbostock是创始者.
+					刚开始的时候,因为不懂英语.忙乱的点来点去,发现有一个头像非常引人注意,从那一刻我就认为这个人肯定很特别.
+					之后又看到了一片文章说是GitHub前10的大佬,很惊奇的是又看见了那个熟悉的头像.然后看见了他的项目,正如他所说,他在为人类设计工具.这一点我相信看过D3js的人都不约而同的赞成. 赞赞赞!
+				</p>
+				<p>
+					我的D3之路开始于2017/1/19  感谢mbostock的创造力,四个字@五体投地.
+				</p>
+			</div>
+			<div class="content">
+				mbostock:<a target="_blank" href="https://github.com/mbostock">https://github.com/mbostock</a><br />
+				Jason Davies:<a target="_blank" href="https://github.com/jasondavies">https://github.com/jasondavies</a><br />
+				Jeffrey Heer:<a target="_blank" href="https://github.com/jheer">https://github.com/jheer</a><br />
+				Justin Cormack:<a target="_blank" href="https://github.com/justincormack">https://github.com/justincormack</a><br />
+				Kai:<a target="_blank" href="https://github.com/syntagmatic">https://github.com/syntagmatic</a><br />
+				Tom MacWright:<a target="_blank" href="https://github.com/tmcw">https://github.com/tmcw</a><br />
+				Kshitij Aranke:<a target="_blank" href="https://github.com/xaranke">https://github.com/xaranke</a><br />
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Examples</legend>
+			<div class="title">
+				D3Examples 分类
+				https://git-scm.com/book/zh/v2
+			</div>
+			<div class="content">
+				<h3><a target="_blank" href="http://selection.datavisualization.ch/">D3 Examples</a></h3>
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>D3相关链接</legend>
+			<div class="title">
+				D3教程链接
+			</div>
+			<div class="content">
+				D3官网:<a target="_blank" href="https://d3js.org/">https://d3js.org/</a><br /> 
+				Github(d3官方):<a target="_blank" href="https://github.com/d3/d3">https://github.com/d3/d3</a><br />
+				Github(司机大傻:张天旭):<a target="_blank" href="https://github.com/tianxuzhang">https://github.com/tianxuzhang</a><br />
+				Examples(2000):<a target="_blank" href="http://christopheviau.com/d3list/index.html">http://christopheviau.com/d3list/index.html</a><br />
+				Example:<a target="_blank" href="https://bl.ocks.org/mbostock">https://bl.ocks.org/mbostock</a><br />
+				D3 开发者Jason Davies 的个人网站:<a target="_blank" href="https://www.jasondavies.com/">https://www.jasondavies.com/</a><br /> 
+				D3 开发者Mike Bostock 的博客:<a target="_blank" href="http://bl.ocks.org/mbostock">http://bl.ocks.org/mbostock</a><br/> 
+				D3 官方教程:<a target="_blank" href="https://github.com/mbostock/d3/wiki/Tutorials">https://github.com/mbostock/d3/wiki/Tutorials</a><br /> 
+				官方api文档:<a target="_blank" href="https://github.com/mbostock/d3/wiki/API-Reference">https://github.com/mbostock/d3/wiki/API-Reference</a><br /> 
+				SVG 在线教程:<a target="_blank" href="http://tutorials.jenkov.com/svg/index.html">http://tutorials.jenkov.com/svg/index.html</a><br />
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>My D3</legend>
+			<div class="title">
+				我的练习demo
+			</div>
+			<div class="content">
+				<ul>
+					<li><a target="_blank" href="demo1.html">javascript hello world</a></li>
+					<li><a target="_blank" href="copy.html">D3 Index</a></li>
+					<li><a target="_blank" href="demo2.html">D3 Hello World</a></li>
+					<li><a target="_blank" href="demo3.html">选择器(selection)</a></li>
+					<li><a target="_blank" href="demo4.html">绑定数据</a></li>
+					<li><a target="_blank" href="demo5.html">使用数据</a></li>
+					<li><a target="_blank" href="demo6.html">用层画条形图</a></li>
+					<li><a target="_blank" href="demo7.html">生成测试数据</a></li>
+					<li><a target="_blank" href="demo8.html">SVG初探</a></li>
+					<li><a target="_blank" href="demo9.html">使用D3绘制SVG</a></li>
+					<li><a target="_blank" href="demo10.html">D3的数据类型</a></li>
+					<li><a target="_blank" href="demo11.html">更自由的条形图</a></li>
+					<li><a target="_blank" href="demo12.html">散点图</a></li>
+					<!--aaa-->
+					<li><a target="_blank" href="demo13.html">比例尺</a></li>
+					<!--aaa-->
+					<li><a target="_blank" href="demo14.html">坐标轴</a></li>
+					<li><a target="_blank" href="demo15.html">有路径的文字</a></li>
+					<!---->
+					<li><a target="_blank" href="demo16.html">SVG基本图形绘制</a></li>
+					<!---->
+					<li><a target="_blank" href="demo17.html">更新、过度和动画</a></li>
+					<!---->
+					<li><a target="_blank" href="demo18.html">通过键联结数据</a></li>
+					<!---->
+					<li><a target="_blank" href="demo19.html">组合添加删除</a></li>
+					<!---->
+					<li><a target="_blank" href="demo20.html">交互图表之鼠标悬停</a></li>
+					<!---->
+					<li><a target="_blank" href="demo21.html">交互图表之条形图排序</a></li>
+					<!---->
+					<li><a target="_blank" href="demo22.html">交互图表之条形图排序切换</a></li>
+					<!---->
+					<li><a target="_blank" href="demo23.html">交互图表之提示条</a></li>
+					<!---->
+					<li><a target="_blank" href="demo24.html">饼图圆环图</a></li>
+					<!---->
+					<li><a target="_blank" href="demo26.html">力导向图</a></li>
+					<!---->
+					<li><a target="_blank" href="demo27.html">加载csv文件</a></li>
+					<!---->
+					<li><a target="_blank" href="demo28.html">加载SVG文件</a></li>
+					<!---->
+					<li><a target="_blank" href="demo29.html">径向树</a></li>
+					<!---->
+					<li><a target="_blank" href="demo30.html">弦图</a></li>
+					<!---->
+					<li><a target="_blank" href="demo32.html">折叠树</a></li>
+					<!---->
+					<li><a target="_blank" href="demo33.html">力导向图之带文字</a></li>
+					<!---->
+					<li><a target="_blank" href="demo34.html">力导向图之分子式</a></li>
+					<!---->
+					<li><a target="_blank" href="demo35.html">力导向图之弧形箭头连线</a></li>
+					<!---->
+					<li><a target="_blank" href="demo36.html">力导向图之图片和提示</a></li>
+					<!---->
+					<li><a target="_blank" href="demo37.html">sankey图</a></li>
+					<!---->
+					<li><a target="_blank" href="demo38.html">矩形树</a></li>
+					<!---->
+					<li><a target="_blank" href="demo39.html">冰柱图</a></li>
+					<!---->
+				</ul>
+			</div>
+		</fieldset>
+			<fieldset>
+				<legend>Other Example</legend>
+				<div class="title">
+					其他人的作品
+				</div>
+				<div class="content">
+					<ul>
+						<li><a target="_blank"  href="http://hint.fm/projects/wordtree/">词树</a></li>
+					</ul>
+				</div>
+			</fieldset>
+			<div id="footer">
+		      © 2017—2017 <a target="_blank" href="http://r-o-b-o-t.cn/">Wall-E</a>
+		    </div>
+	</body>
+</html>
